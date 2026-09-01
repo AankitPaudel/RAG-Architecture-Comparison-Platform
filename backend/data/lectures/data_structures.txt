@@ -1,0 +1,21 @@
+DATA STRUCTURES AND COMPUTER SCIENCE FUNDAMENTALS
+
+Computer science is the systematic study of computation, information processing, and the design of computer systems. Algorithms are step-by-step procedures for solving problems. Data structures organize and store data efficiently for algorithm operations.
+
+Arrays store elements in contiguous memory locations, providing constant-time access by index. Linked lists store elements in nodes connected by pointers, allowing efficient insertion and deletion. Stacks follow last-in-first-out ordering and support push and pop operations. Queues follow first-in-first-out ordering and support enqueue and dequeue operations.
+
+Trees are hierarchical data structures with a root node and child nodes. Binary trees have at most two children per node. Binary search trees maintain sorted order for efficient searching. Balanced trees like AVL trees and red-black trees guarantee logarithmic time complexity for search, insert, and delete operations.
+
+Graphs consist of vertices connected by edges. Graphs model networks, social connections, and dependency relationships. Graph traversal algorithms include depth-first search and breadth-first search. Shortest path algorithms like Dijkstra's algorithm find optimal routes in weighted graphs.
+
+Hash tables provide average constant-time lookup by mapping keys to array indices through a hash function. Collision resolution strategies include chaining and open addressing. Hash tables are fundamental to databases, caches, and symbol tables in compilers.
+
+Sorting algorithms arrange elements in order. Comparison-based sorts include bubble sort, insertion sort, merge sort, quick sort, and heap sort. Merge sort and quick sort achieve O(n log n) average time complexity. Non-comparison sorts like counting sort and radix sort achieve linear time for specific input constraints.
+
+Big O notation describes algorithm time and space complexity as input size grows. Constant time O(1) operations do not depend on input size. Logarithmic O(log n) algorithms halve the problem each step. Linear O(n) algorithms process each element once. Quadratic O(n squared) algorithms compare all pairs of elements.
+
+Photosynthesis is the process by which plants convert light energy into chemical energy. Chlorophyll absorbs red and blue light wavelengths most efficiently. This energy drives the conversion of carbon dioxide and water into glucose and oxygen. While photosynthesis is a biology topic, understanding energy conversion parallels computational energy efficiency concepts.
+
+Memory management in computer systems involves allocating and freeing memory for programs. Garbage collection automatically reclaims unused memory in managed languages. Manual memory management in languages like C requires explicit allocation and deallocation. Memory leaks occur when allocated memory is never freed.
+
+Concurrency allows multiple computations to proceed simultaneously. Threads share memory within a process while processes have separate memory spaces. Synchronization primitives like mutexes and semaphores prevent race conditions. Deadlocks occur when threads wait for each other indefinitely.

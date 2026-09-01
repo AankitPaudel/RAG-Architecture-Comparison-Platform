@@ -1,0 +1,25 @@
+backend/.env
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+node_modules/
+dist/
+
+# Local runtime data
+backend/*.db
+backend/data/vector_store/
+backend/data/audio/
+
+# Logs and OS files
+*.log
+.DS_Store

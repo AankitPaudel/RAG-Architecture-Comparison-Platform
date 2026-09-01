@@ -1,0 +1,191 @@
+/* File: frontend/src/styles/main.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary-color: #64748b;
+    --background-light: #ffffff;
+    --background-muted: #f8fafc;
+    --border-color: #e2e8f0;
+}
+
+body {
+    @apply antialiased bg-white text-gray-900;
+}
+
+.knowledge-shell {
+    position: relative;
+    overflow: hidden;
+    background: #f8fafc;
+}
+
+.knowledge-shell::before,
+.knowledge-shell::after,
+.knowledge-stars {
+    display: none;
+}
+
+.knowledge-panel {
+    box-shadow: inset 0 0 0 1px #e2e8f0;
+    background: #ffffff;
+}
+
+.graph-node {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+    background: #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+}
+
+.graph-node-a { left: 12%; top: 24%; }
+.graph-node-b { left: 58%; top: 18%; background: #10b981; box-shadow: 0 0 8px rgba(16, 185, 129, 0.4); }
+.graph-node-c { left: 78%; top: 68%; background: #8b5cf6; box-shadow: 0 0 8px rgba(139, 92, 246, 0.4); }
+.graph-node-d { left: 32%; top: 72%; }
+
+.graph-line {
+    position: absolute;
+    height: 1px;
+    transform-origin: left center;
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.5), rgba(16, 185, 129, 0.1));
+}
+
+.graph-line-1 { left: 17%; top: 30%; width: 45%; transform: rotate(-8deg); }
+.graph-line-2 { left: 35%; top: 75%; width: 47%; transform: rotate(-36deg); }
+.graph-line-3 { left: 17%; top: 31%; width: 31%; transform: rotate(52deg); }
+
+.chat-container {
+    @apply flex flex-col h-screen bg-gray-50;
+}
+
+.messages-container {
+    @apply flex-1 overflow-y-auto p-4 space-y-6;
+    scrollbar-width: thin;
+}
+
+.audio-recorder {
+    @apply relative flex items-center;
+}
+
+.record-button {
+    @apply flex items-center justify-center p-3 rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.record-button:not(.recording) {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-700;
+}
+
+.record-button.recording {
+    @apply bg-red-500 hover:bg-red-600 text-white;
+}
+
+.audio-levels {
+    @apply absolute -top-16 left-1/2 transform -translate-x-1/2 bg-white rounded-lg shadow-lg p-2 border border-gray-200;
+}
+
+.audio-level-bar {
+    @apply w-1 rounded-full transition-all duration-200;
+}
+
+.message {
+    @apply p-4 rounded-xl shadow-sm max-w-lg animate-fade-in;
+}
+
+.message.user {
+    @apply bg-blue-600 text-white ml-auto;
+}
+
+.message.assistant {
+    @apply bg-white border border-gray-200 mr-auto;
+}
+
+.loading-indicator {
+    @apply flex items-center space-x-2 text-gray-500;
+}
+
+.spinner {
+    @apply w-5 h-5 animate-spin;
+    border: 2px solid currentColor;
+    border-top-color: transparent;
+    border-radius: 50%;
+}
+
+.input-container {
+    @apply border-t border-gray-200 bg-white p-4;
+}
+
+.input-form {
+    @apply flex items-center space-x-2 bg-gray-100 rounded-lg p-2;
+}
+
+.wave {
+    @apply w-1 bg-blue-500 rounded-full transform transition-all duration-150;
+    animation: wave 1s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% { transform: scaleY(0.5); }
+    50% { transform: scaleY(1.5); }
+}
+
+::-webkit-scrollbar {
+    @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.3s ease-out forwards;
+}
+
+.transcript-bubble {
+    @apply bg-blue-50 text-blue-900 rounded-xl px-4 py-2 mx-4 mb-4 max-w-[80%] ml-auto shadow-sm animate-fade-in border border-blue-100;
+}
+
+.welcome-screen {
+    @apply flex flex-col items-center justify-center p-8 text-center;
+}
+
+.feature-card {
+    @apply bg-white border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200;
+}
+
+.audio-player {
+    @apply flex items-center space-x-2;
+}
+
+.play-button {
+    @apply px-4 py-2 rounded-lg text-white transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+}
+
+.play-button:not(:disabled) {
+    @apply bg-blue-600 hover:bg-blue-700;
+}
+
+.voice-visualization {
+    @apply flex items-end space-x-1 h-8;
+}
+
+.voice-bar {
+    @apply w-1 bg-blue-500 rounded-full transition-all duration-150;
+}

@@ -1,0 +1,17 @@
+ALGORITHMS AND RECURSION
+
+Recursion is one of the most important problem-solving techniques in computer science. Recursion is when a function calls itself to solve smaller subproblems of the same type. Every recursive algorithm must include a base case that stops the recursion. Without a base case, recursive calls continue forever and cause a stack overflow.
+
+A classic example of recursion is calculating the factorial of a number. The factorial of n is defined as n multiplied by the factorial of n minus one, until n reaches one. Another example is the Fibonacci sequence, where each number is the sum of the two preceding numbers.
+
+Recursion is closely related to divide and conquer strategies. Merge sort and quick sort both use recursion to break large sorting problems into smaller ones. Binary search also uses recursion to search a sorted array by repeatedly dividing the search interval in half.
+
+Recursion requires careful thinking about the call stack. Each recursive call adds a new frame to the stack. Deep recursion can consume significant memory. Tail recursion is a special form where the recursive call is the last operation in the function, allowing some compilers to optimize it into iteration.
+
+When teaching recursion, students often struggle with tracing recursive calls. Drawing recursion trees helps visualize how problems decompose. Understanding recursion is essential for advanced topics like tree traversal, graph algorithms, and dynamic programming.
+
+Base cases are the stopping conditions that prevent infinite recursion. For example, in tree traversal, the base case is reaching a null node. In factorial, the base case is when n equals zero or one. Identifying the correct base case is often the hardest part of writing recursive solutions.
+
+Recursion can be converted to iteration using an explicit stack data structure. Some problems are naturally recursive while others are more efficiently solved iteratively. The choice between recursion and iteration depends on problem structure, performance requirements, and code clarity.
+
+Dynamic programming often builds on recursive solutions by storing intermediate results to avoid redundant computation. Memoization transforms exponential recursive algorithms into polynomial-time solutions. Understanding recursion is therefore a prerequisite for mastering dynamic programming techniques.
