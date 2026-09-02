@@ -41,11 +41,11 @@ export const ChatInterface = () => {
     };
 
     return (
-        <div className="knowledge-shell flex h-screen bg-gray-50 text-gray-900">
+        <div className="knowledge-shell flex h-full min-h-0 bg-gray-50 text-gray-900">
             <aside className="relative z-10 hidden w-80 flex-col border-r border-gray-200 bg-white md:flex">
                 <div className="flex h-full flex-col justify-between">
                     <div>
-                        <div className="border-b border-gray-200 p-6 pt-20">
+                        <div className="border-b border-gray-200 p-6">
                             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-md border border-blue-200 bg-blue-50 text-blue-600">
                                 <Network className="h-6 w-6" />
                             </div>
@@ -105,7 +105,7 @@ export const ChatInterface = () => {
             </aside>
 
             <section className="relative z-10 flex min-w-0 flex-1 flex-col">
-                <div ref={chatContainerRef} className="relative flex-1 overflow-y-auto p-6 pt-20">
+                <div ref={chatContainerRef} className="relative flex-1 overflow-y-auto p-6">
                     <div className="mx-auto mb-5 flex max-w-4xl items-center gap-3 rounded-md border border-gray-200 bg-white px-4 py-3 shadow-sm">
                         <Sparkles className="h-5 w-5 text-blue-600" />
                         <div>

@@ -73,8 +73,8 @@ export const SourcesPage = () => {
     const inputClass = "h-11 w-full rounded-md border border-gray-300 bg-white px-3 text-sm text-gray-900 outline-none placeholder:text-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-100";
 
     return (
-        <div className="knowledge-shell flex h-screen flex-col bg-gray-50 text-gray-900">
-            <main className="relative z-10 mx-auto grid w-full max-w-6xl flex-1 gap-5 overflow-y-auto px-6 pb-6 pt-24 lg:grid-cols-[420px_1fr]">
+        <div className="knowledge-shell flex h-full min-h-0 flex-col bg-gray-50 text-gray-900">
+            <main className="relative z-10 mx-auto grid w-full max-w-6xl flex-1 gap-5 overflow-y-auto px-6 py-6 lg:grid-cols-[420px_1fr]">
                 <section className="space-y-5">
                     <div className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm">
                         <div className="mb-4 flex items-center gap-3">

@@ -17,6 +17,11 @@ body {
     @apply antialiased bg-white text-gray-900;
 }
 
+.app-main {
+    @apply min-h-0 flex-1;
+}
+
+
 .knowledge-shell {
     position: relative;
     overflow: hidden;

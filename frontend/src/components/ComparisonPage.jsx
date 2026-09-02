@@ -321,7 +321,7 @@ export const ComparisonPage = () => {
     };
 
     return (
-        <div className="knowledge-shell flex h-screen flex-col bg-gray-50 text-gray-900">
+        <div className="knowledge-shell flex h-full min-h-0 flex-col bg-gray-50 text-gray-900">
             <header className="relative z-10 border-b border-gray-200 bg-white px-6 py-5">
                 <div className="mx-auto max-w-7xl">
                     <h1 className="text-2xl font-semibold">RAG Architecture Comparison</h1>
@@ -331,7 +331,7 @@ export const ComparisonPage = () => {
                 </div>
             </header>
 
-            <main className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col overflow-hidden px-6 py-5 pt-20">
+            <main className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col overflow-hidden px-6 py-5">
                 <form onSubmit={handleSubmit} className="mb-4 space-y-4">
                     <div className="flex gap-3">
                         <div className="relative flex-1">

@@ -42,7 +42,7 @@ export const EvaluationPage = () => {
     };
 
     return (
-        <div className="knowledge-shell flex h-screen flex-col bg-gray-50 text-gray-900">
+        <div className="knowledge-shell flex h-full min-h-0 flex-col bg-gray-50 text-gray-900">
             <header className="relative z-10 border-b border-gray-200 bg-white px-6 py-5">
                 <div className="mx-auto max-w-6xl">
                     <h1 className="text-2xl font-semibold">RAG Evaluation</h1>
@@ -52,7 +52,7 @@ export const EvaluationPage = () => {
                 </div>
             </header>
 
-            <main className="relative z-10 mx-auto w-full max-w-6xl flex-1 overflow-y-auto px-6 py-5 pt-20">
+            <main className="relative z-10 mx-auto w-full max-w-6xl flex-1 overflow-y-auto px-6 py-5">
                 <div className="mb-6 flex items-center gap-3">
                     <button onClick={runEvaluation} disabled={isLoading} className="inline-flex items-center gap-2 rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-700 disabled:opacity-50">
                         {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Play className="h-4 w-4" />}
